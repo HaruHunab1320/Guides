@@ -18,48 +18,48 @@ PDO requires the new OO features in the core of PHP 5
 
 ## MySQL VS MySQLi
 
-```
 
-MySQL	                                                                            MySQLi
-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-MySQL extension added in PHP version 2.0. and deprecated as of PHP 5.5.0.	        MySQLi extension added in PHP 5.5 and will work on MySQL 4.1.3 or above.            
+    MySQL	                                                                            MySQLi
+    --------------------------------------------------------------------------------------------------------
 
-Does not support prepared statements.	                                            MySQLi supports prepared statements.
+    MySQL extension added in PHP version 2.0. and deprecated as of PHP 5.5.0.	        MySQLi extension added in PHP 5.5 and will work on MySQL 4.1.3 or above.            
 
-MySQL provides the procedural interface.	                                        MySQLi provides both procedural and object-oriented interface.
+    Does not support prepared statements.	                                            MySQLi supports prepared statements.
 
-MySQL extension does not support stored procedure.	                                MySQLi supports store procedure.
+    MySQL provides the procedural interface.	                                        MySQLi provides both procedural and object-oriented interface.
 
-MySQL extension lags in security and other special features, comparatively.	        MySQLi extension is with enhanced security and improved debugging.
+    MySQL extension does not support stored procedure.	                                MySQLi supports store procedure.
 
-Transactions are handled by SQL queries only.	                                    MySQLi supports transactions through API.
+    MySQL extension lags in security and other special features, comparatively.	        MySQLi extension is with enhanced security and improved debugging.
 
-Extension directory: ext/mysql.	                                                    Extension directory: ext/mysqli.
-```
+    Transactions are handled by SQL queries only.	                                    MySQLi supports transactions through API.
+
+    Extension directory: ext/mysql.	                                                    Extension directory: ext/mysqli.
+
 
 ## PDO VS MYSQL
 
-```
-                            PDO	                        MySQLi
----------------------------------------------------------------------------
-Database support	        12 different drivers	    MySQL only
 
-API	                        OOP	                        OOP + procedural
+                                    PDO	                        MySQLi
+        ---------------------------------------------------------------------------
+        Database support	        12 different drivers	    MySQL only
 
-Connection	                Easy	                    Easy
+        API	                        OOP	                        OOP + procedural
 
-Named parameters	        Yes	                        No
+        Connection	                Easy	                    Easy
 
-Object mapping	            Yes                   	    Yes
+        Named parameters	        Yes	                        No
 
-Prepared statements
-(client side)	            Yes	                        No
+        Object mapping	            Yes                   	    Yes
 
-Performance	                Fast	                    Fast
+        Prepared statements
+        (client side)	            Yes	                        No
 
-Stored procedures	        Yes	                        Yes
-```
+        Performance	                Fast	                    Fast
+
+        Stored procedures	        Yes	                        Yes
+
 
 
 ### PDO - MySQL(PDO_MYSQL) Driver
